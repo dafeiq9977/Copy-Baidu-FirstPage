@@ -1,0 +1,280 @@
+#shortcut {
+    width: 100%;
+    /*height: 60px;*/
+    margin-top: 15px;
+    font-size: 0.9em;
+    /* 设置宽度最小值，窗口缩小时排版不会乱*/
+    min-width: 900px;
+}
+#shortcut .left{
+    float: left;
+    margin-left: 20px;
+}
+#shortcut .right{
+    float: right;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+/* 区块后补充一个after伪元素清除浮动，撑开父区块*/
+#shortcut::after{
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+#shortcut span{
+    margin-right: 10px;
+}
+#shortcut a:hover{
+    color: rgb(74, 74, 236);
+}
+#shortcut .more{
+    float: right;
+    margin-left: 10px;
+    position: relative;
+}
+#shortcut .hide{
+    margin-left: -180px;
+    display: none;
+    box-shadow: 2px 2px 2px rgb(28, 28, 28);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+    font-size: 10px;
+    text-align: center;
+    background-color: white;
+}
+#show_hide:hover .hide{
+    display: block;
+}
+#hide_topics{
+    margin: 5px;
+    width: 230px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+#hide_topics .item{
+    width: 60px;
+    margin: 0 3px 0 3px;
+    padding: 3px;
+    border-radius: 5px;
+}
+#hide_topics .item:hover{
+    background-color: rgb(225, 238, 246);
+    color: rgb(74, 74, 236);
+}
+#hide_foot{
+    margin: 0 10px 10px 10px;
+    height: 25px;
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+}
+#hide_foot:hover{
+    border-radius: 5px;
+    background-color: rgb(232, 232, 241);
+    color: rgb(27, 27, 226);
+}
+
+#shortcut .right div{
+    margin-right: 10px;
+}
+#shortcut .right_div{
+    float: left;
+}
+#shortcut .right::after{
+    clear: both;
+    content: '';
+    display: block;
+    visibility: hidden;
+}
+#weather{
+    position: relative;
+}
+#weather_type{
+    background-color: rgb(18, 212, 18);
+    border-radius: 10px;
+    font-size: 10px;
+    color: white;
+}
+#weather_hide{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: -150px;
+    width: 450px;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgb(28, 28, 28);
+    border-radius: 5px;
+    background-color: rgb(251, 251, 251);
+}
+#weather:hover #weather_hide{
+    display: block;
+}
+#weatherhide_top{
+    width: 100%;
+}
+#weatherhide_top::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+#weatherhide_topleft{
+    float: left;
+}
+#weatherhide_topright{
+    float: right;
+    margin-right: 10px;
+}
+#weatherhide_top a{
+    color: rgb(74, 74, 236);
+}
+#weatherhide_week{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+}
+#weatherhide_week{
+    cursor: pointer;
+}
+#weatherhide_week .item:hover{
+    border-radius: 5px;
+    background-color: rgb(230, 232, 234);
+}
+
+#configure{
+    position: relative;
+}
+#configure_hide{
+    padding: 10px;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: -50px;
+    width: 90px;
+    height: 220px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgb(28, 28, 28);
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+    font-size: 12px;
+}
+#configure:hover #configure_hide{
+    display: block;
+}
+#configure_hide p{
+    margin: 10px;
+    cursor: pointer;
+}
+
+#account{
+    position: relative;
+}
+#account_hide{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0px;
+    width: 90px;
+    height: 120px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgb(28, 28, 28);
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+    font-size: 12px;
+}
+#account:hover #account_hide{
+    display: block;
+}
+#account_hide p{
+    margin: 12px;
+    cursor: pointer;
+}
+
+article{
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    min-width: 900px;
+}
+#search_logo {
+    /*position: absolute;
+    z-index: 1;*/
+    width: 300px;
+    height: 130px;
+    margin: auto;
+}
+
+#search_form{
+    width: 654px;
+    height: 40px;
+    margin: 20px auto;
+    border: 3px solid blue;
+    border-radius: 8px;
+}
+#search_input{
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 100px;
+    width: 420px;
+    height: 40px;
+    border: none;
+    text-align: center;
+}
+#search_input input{
+    width: 375px;
+    line-height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#search_submit{
+    display: inline-block;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: blue;
+    width: 109px;
+    height: 42px;
+    transform: translate(21px, 0px);
+}
+#search_submit input{
+    border: none;
+    outline: none;
+    margin-left: 25px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 39px;
+    cursor: pointer;
+}
+#search_img{
+    display: inline-block;
+    transform: translate(500px, -40px);
+}
+#search_hide{
+    display: none;
+    color: rgb(148, 148, 148);
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgb(112, 112, 112);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    transform: translate(450px, -20px);
+}
+#search_img:hover + #search_hide{
+    display: block;
+}
